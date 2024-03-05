@@ -48,7 +48,7 @@ const Main = () => {
 
     return (
         <main className={style.main}>
-            {news.length > 0 && !isLoading ? <NewsBanner item={news[0]}/> : (
+            {news?.length > 0 && !isLoading ? <NewsBanner item={news[0]}/> : (
                 <Skeleton count={1} type={"banner"}/>
             )}
 

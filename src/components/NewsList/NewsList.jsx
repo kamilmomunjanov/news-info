@@ -6,7 +6,7 @@ import NewsItem from "../NewsItem/NewsItem";
 const NewsList = ({news}) => {
     return (
         <ul className={style.list}>
-            {news.map(item => (
+            {news?.map(item => (
                  <NewsItem key={item.id} item={item}/>
             ))}
         </ul>
